@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forma</title>
+    <style>
+        input[type=number]{
+            width: 10em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uzpildykite forma:</h1>
+    <h6>Visi laukai privalomi.</h6>
+    <form action="#">
+        Vardas (is didziosios raides):
+        <br>
+        <br>
+        <input type="text" name="vardas" placeholder="Vardas" required>
+        <br>
+        <br>       
+        Jusu telefono numeris:
+        <br>
+        <br>    
+        <input type="tel" name="telefonas" placeholder="+370-xxx-xxxxx" required>
+        <br>
+        <br>
+        El.pasto adresas:
+        <br>
+        <br>
+        <input type="email" name="pastas" placeholder="el.p.adresas" required>
+        <br>
+        <br>
+        Jusu megstamiausios internetines svetaines adresas:
+        <br>
+        <br>
+        <input type="url" name="url" placeholder="url adresas" required>
+        <br>
+        <br>
+        Jusu gimimo data:
+        <br>
+        <br>
+        <input type="date" name="gimimodata" required>
+        <br>
+        <br>
+        Jusu amzius (18-65):
+        <br>
+        <br>
+        <input type="number" name="amzius" min="18" max="65" placeholder="nuo 18 iki 65 metu" required>
+        <br>
+        <br>
+        Jusu pasto kodas:
+        <br>
+        <br>
+        <input type="text" name="pastas" placeholder="XX-01234" required>
+        <br>
+        <br>
+        <input type="color" name="favspalva" value="#000000 " required>
+        <br>
+        <button type="submit">Pateikti</button>
+    </form>
+</body>
+</html>

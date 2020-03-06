@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skaiciuotuvas</title>
+    <style>
+        form {
+            border: 1px solid green;
+            width: 6%;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
+        input[type="text"] {
+            width: 8em;
+        }
+    </style>
+</head>
+<body>
+    <form name="skaiciuotuvas">
+        <h3>Skaiciuotuvas</h3>  
+        <input type="text" name="rezultas">
+        <br>    
+        <br>
+        <input type="button" value="1" onclick="skaiciuotuvas.rezultas.value += '1'">
+        <input type="button" value="2" onclick="skaiciuotuvas.rezultas.value += '2'">
+        <input type="button" value="3" onclick="skaiciuotuvas.rezultas.value += '3'">
+        <input type="button" value="+" onclick="skaiciuotuvas.rezultas.value += '+'">
+        <br>
+        <input type="button" value="4" onclick="skaiciuotuvas.rezultas.value += '4'">
+        <input type="button" value="5" onclick="skaiciuotuvas.rezultas.value += '5'">
+        <input type="button" value="6" onclick="skaiciuotuvas.rezultas.value += '6'">
+        <input type="button" value="-" onclick="skaiciuotuvas.rezultas.value += '-'">
+        <br>
+        <input type="button" value="7" onclick="skaiciuotuvas.rezultas.value += '7'">
+        <input type="button" value="8" onclick="skaiciuotuvas.rezultas.value += '8'">
+        <input type="button" value="9" onclick="skaiciuotuvas.rezultas.value += '9'">
+        <input type="button" value="x" onclick="skaiciuotuvas.rezultas.value += '*'">
+        <br>
+        <input type="button" value="c" onclick="skaiciuotuvas.rezultas.value = ''">
+        <input type="button" value="0" onclick="skaiciuotuvas.rezultas.value += '0'">
+        <input type="button" value="=" onclick="skaiciuotuvas.rezultas.value = eval(skaiciuotuvas.rezultas.value)">
+        <input type="button" value="/" onclick="skaiciuotuvas.rezultas.value += '/'">
+        <br>
+        <br>
+    </form>
+</body>
+</html>

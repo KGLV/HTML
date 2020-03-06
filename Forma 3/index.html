@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pimp My Shoes</title>
+  </head>
+  <body>
+    <h1>"Pimp My Shoes" Contest Entry Form</h1>
+    <p>
+      Want to trade in your old sneakers for a custom pair of Forcefields? Make
+      a case for why your shoes have got to go and you may be one of ten lucky
+      winners.
+    </p>
+    <form name="entry">
+      <fieldset>
+        <legend>Contest Entry Information</legend>
+        Name: <input type="text" name="name" required /><br/>
+        City: <input type="text" name="city" required /><br/>
+        State: <input type="text" name="state" required /><br/>
+        My shoes are SO old... <br/>
+        <textarea
+          cols="60"
+          rows="5"
+          placeholder="(Your entry must be no more than 300 characters long.)"
+          minlength="300"
+          required
+        ></textarea>
+      </fieldset>
+      <h2>Design your custom Forcefields:</h2>
+      <fieldset>
+        <legend>Custom Shoe Design</legend>
+        <fieldset>
+            <legend>Color <em>(choose one):</em></legend>
+            <input type="radio" name="color" value="red"> Red
+            <br>
+            <input type="radio" name="color" value="blue"> Blue 
+            <br>
+            <input type="radio" name="color" value="black"> Black
+            <br>
+            <input type="radio" name="color" value="silver"> Silver
+        </fieldset>
+        <fieldset>
+            <legend>Features <em>(Choose as many as you want)</em></legend>
+            <input type="checkbox"> Sparkly laces
+            <br>
+            <input type="checkbox"> Metallic logo
+            <br>
+            <input type="checkbox"> Light-up heels
+            <br>
+            <input type="checkbox"> MP3-enabled
+        </fieldset>
+        <fieldset>
+            <legend>Size</legend>
+            Size reflects standard men's sizes:
+            <select required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </fieldset>
+      </fieldset>
+      <br>
+      <button type="submit">Pimp my shoes!</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
